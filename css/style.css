@@ -74,7 +74,7 @@ Images block
 }
 .cd-images-list > li {
   height: 250px;
-  background: #979c9c url(../img/img-1.jpg) no-repeat center center;
+  background: #979c9c url(../img/img-1.jpg) no-repeat left center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(2) {
