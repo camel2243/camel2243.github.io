@@ -13,7 +13,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
   color: #343642;
   background-color: #ffffff;
 }
@@ -31,6 +30,10 @@ button {
   font-size: 1.6rem;
 }
 
+.font
+{
+  font-family: 'cwTeXHei', serif, 'arial';
+}
 /* -------------------------------- 
 
 Images block
@@ -135,6 +138,7 @@ Content block
   top: 0;
   left: 0;
   height: 100%;
+  width:100%;
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
