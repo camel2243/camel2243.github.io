@@ -1,0 +1,25 @@
+@import '_reset.scss';
+@import '_variable.scss';
+
+body {
+  font-size: $fontSize;
+  color: $fontColor;
+  background-color: $backgroundColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.font
+{
+  font-family: 'cwTeXHei', serif, 'arial';
+}

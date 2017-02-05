@@ -6,7 +6,7 @@ var scssSource = './scss/*.scss';
 
 gulp.task('sass', function() {
     gulp.src(scssSource)
-        .pipe(sass({outputStyle: 'compressed', sourceComments: true}))
+        .pipe(sass({sourceComments: true}))
         .pipe(gulp.dest(function(f) {
             return "./dist/css";
         }));
