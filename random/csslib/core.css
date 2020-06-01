@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+html
+{
+	font-size:75%;
+}
+
+body
+{
+	font-family:微軟正黑體;
+	margin:0px;
+}
+
+input
+{
+	font-family:微軟正黑體;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+span
+{
+	font-family:微軟正黑體;
+}
+
+.text-align-center
+{
+	text-align:center;
+}
+
+.float-right
+{
+	float:right;
+}
+
+.margin-center
+{
+	margin:0 auto;
+}
+
+.auto-div
+{
+	width:auto;
+	height:auto;
+}
+
+.input-rect
+{
+	padding:8px;
+	margin:4px;
+}
+
+
