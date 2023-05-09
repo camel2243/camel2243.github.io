@@ -283,7 +283,7 @@
 						</div>
 					</h2>
 				</section>
-				<section class="" data-id="c009eb9e06d4e3ab7c886659367725a0" data-fragment="-1">
+				<section class="" data-id="c009eb9e06d4e3ab7c886659367725a0" data-fragment="0">
 					<h2 data-fragment-index="0" class="visible absolute-element"
 						style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; max-height: none; max-width: none;">
 						<br class="Apple-interchange-newline">#1 跨平台快速註冊 - 驗證會員
@@ -404,39 +404,6 @@
 					</blockquote>
 					<br>
 				</section>
-				<section class="" data-id="fb32dad0e2257a457106e1ca57fef915">
-					<h2 data-fragment-index="0" class="visible absolute-element"
-						style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; max-height: none; max-width: none;">
-						<br class="Apple-interchange-newline">Cookie SameSite Attribute
-					</h2>
-					<h2>
-						<div class="absolute-element visible" data-fragment-index="1">
-							<ul>
-								<li
-									style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
-									Strict<br>Cookie 只在 <font color="#45818e">same-site </font>
-									<font color="#ffffff">時才會被發送出去</font>
-								</li>
-								<li
-									style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
-									Lax（預設值）<br>Cookie 會在 same-site / cross-site top-level navigation 送出</li>
-								<li
-									style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
-									None<br><span
-										style="font-size: 30px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; text-align: center;">Cookie
-										會在 cross-site / same-site 時都被發送出去</span>
-								</li>
-							</ul>
-						</div>
-					</h2>
-					<div class="absolute-element"
-						style="position: absolute; width: 522.484px; height: 39px; z-index: 4; left: 431px; top: 654px;"><a
-							href="https://datatracker.ietf.org/doc/html/draft-west-first-party-cookies">
-							<font style="font-size: 18px;">
-								https://datatracker.ietf.org/doc/html/draft-west-first-party-cookies
-							</font>
-						</a></div>
-				</section>
 				<section class="" data-id="4b8e3ae25ed4f3d310d5bb680177bedb">
 					<h2 data-fragment-index="0" class="visible absolute-element"
 						style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; max-height: none; max-width: none;">
@@ -455,7 +422,7 @@
 							<ul>
 								<li
 									style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
-									Strict<br>Cookie 只在 <font color="#45818e">same-site </font>
+									Strict<br>Cookie 只在 <font color="#ffffff">same-site </font>
 									<font color="#ffffff">時才會被發送出去</font>
 								</li>
 								<li
@@ -702,31 +669,37 @@
 						<ol>
 							<li
 								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
+								<span
+									style="font-size: 30px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400;">Arc
+									設定 CORS</span><br></li>
+							<li
+								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
+								Arc 會員登入會帶有&nbsp;<font color="#6aa84f">login_token (same-site: none)</font>
+							</li>
+							<li
+								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
+								CodeMentor 打&nbsp;<font color="#e69138">/api/is_user_logged_in&nbsp;</font>
+								<font color="#ffffff">決定是否塞 Iframe</font>
+							</li>
+							<li
+								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
 								CodeMentor 設定 CSP：frame-src</li>
 							<li
 								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
 								Arc 設定 CSP：frame-ancestors</li>
 							<li
 								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
-								Arc 設定 CORS</li>
-							<li
-								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
-								Arc 會員登入會帶有 <font color="#6aa84f">login_token (same-site: none)</font>
-							</li>
-							<li
-								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
 								Arc 提供一個註冊頁面的 embedding frame code</li>
 							<li
 								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
-								CodeMentor 打&nbsp;<font color="#e69138">/api/is_user_logged_in </font>
-								<font color="#ffffff">決定是否塞 Iframe</font>
-							</li>
+								成功註冊</li>
 						</ol>
 					</div>
 				</h2>
 				<div style="text-align:left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <font
-						style="font-size: 24px;">參考：&nbsp;<font color="#e69138">https://www.geeksforgeeks.org/
-						</font>
+						style="font-size: 24px;">參考：&nbsp;<font color="#e69138"><a
+								href="https://www.geeksforgeeks.org/">https://www.geeksforgeeks.org/
+							</a></font>
 					</font>
 				</div>
 			</section>
@@ -847,12 +820,11 @@
 									&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li>
 								<li
 									style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
-									頁面 Loaded</li>
+									頁面 Load</li>
 							</ol>
-							<div style="text-align: center;">
-								<img
-									src="https://s3.amazonaws.com/media-p.slid.es/uploads/873498/images/10453559/Untitled-2023-05-06-1455.png"
-									style="width: 775.17px; height: 204.156px; max-height: none; max-width: none;"><span
+							<div style="text-align: center;"><img
+									src="https://s3.amazonaws.com/media-p.slid.es/uploads/873498/images/10459933/Untitled-2023-05-06-1455.png"
+									style="width: 758.402px; height: 213.25px; max-height: none; max-width: none;"><span
 									style="font-size: 30px; font-weight: 400;"><br></span>
 							</div>
 						</div>
@@ -916,7 +888,7 @@
 						</div>
 						<div style="text-align: left;"><span style="font-style: italic;">{event: 'widgetDisplayed', time:
 								2403}</span></div>
-						<div style="text-align: left;"><span style="font-style: italic;">{event: 'Loaded', time: 3959}</span></div>
+						<div style="text-align: left;"><span style="font-style: italic;">{event: 'Load', time: 3959}</span></div>
 					</blockquote>
 					<br>
 				</section>
@@ -996,8 +968,42 @@
 					<br class="Apple-interchange-newline">#2 Widget 載入速度評測 -&nbsp;結果
 				</h2>
 				<div><img
-						src="https://s3.amazonaws.com/media-p.slid.es/uploads/873498/images/10453601/Screenshot_2023-05-07_at_6.54.35_PM.png"
-						style="width: 811.049px; height: 397px; max-height: none; max-width: none;"></div>
+						src="https://s3.amazonaws.com/media-p.slid.es/uploads/873498/images/10459949/Screenshot_2023-05-09_at_11.46.44_PM.png"
+						style="width: 790.889px; height: 389px; max-height: none; max-width: none;"><br></div>
+			</section>
+			<section class="" data-id="3118bd2143ca8cadef154b333f76f39a">
+				<h2 data-fragment-index="0" class="visible absolute-element"
+					style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; ">
+					<br class="Apple-interchange-newline">
+				</h2>
+				<h2 data-fragment-index="0" class="visible absolute-element"
+					style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; "><span
+						style="font-size: 53.805px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: bold;">#2
+						Widget 載入速度評測</span><span
+						style="font-size: 53.805px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: bold;">&nbsp;</span>&nbsp;-
+					解法</h2>
+
+				<h2>
+					<div class="absolute-element visible" data-fragment-index="1" style="margin-top: 60px;">
+						<ol>
+							<li
+								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
+								在 widget.js 插入許多 pixel tracking 紀錄 event</li>
+							<li
+								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
+								透過&nbsp;<a href="https://www.npmjs.com/package/google-spreadsheet">google-spreadsheet</a>&nbsp;紀錄 widget
+								階段時間</li>
+							<li
+								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
+								使用&nbsp;<font color="#e69138"><a href="https://nightwatchjs.org/">Nightwatch.js</a>&nbsp;</font>&nbsp;
+								<font color="#ffffff">大量測試各瀏覽器數據</font>
+							</li>
+							<li
+								style="font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 30px;">
+								在 spreadsheet 取得載入綜合數據指標</li>
+						</ol>
+					</div>
+				</h2>
 			</section>
 			<section class="" data-id="5902b1bbfefbe76b30e46702a0f7bafa">
 				<h2 data-fragment-index="0" class="visible absolute-element"
